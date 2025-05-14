@@ -20,7 +20,7 @@ const Banner = () => {
       <span id="about"></span>
       <div style={bgImage}>
         <div className="container flex min-h-[550px] items-center justify-center py-12 sm:py-0">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-[40%_60%] lg:grid-cols-2">
             {/* image section */}
             <div data-aos="zoom-in">
               <img
@@ -31,12 +31,12 @@ const Banner = () => {
             </div>
             {/* text section */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0">
-              <h1
+              <h2
                 data-aos="fade-up"
                 className="font-cursive text-3xl font-bold sm:text-4xl"
               >
                 Premium Blen Coffee
-              </h1>
+              </h2>
               <p
                 data-aos="fade-up"
                 className="text-sm leading-5 tracking-wider text-gray-500"
@@ -48,7 +48,9 @@ const Banner = () => {
                 <div className="space-y-5">
                   <div data-aos="fade-up" className="flex items-center gap-3">
                     <GrSecure className="h-12 w-12 rounded-full bg-red-100 p-3 text-2xl shadow-sm" />
-                    <span>Premium Coffee</span>
+                    <span className="text-xs md:text-sm lg:text-base">
+                      Premium Coffee
+                    </span>
                   </div>
                   <div
                     data-aos="fade-up"
@@ -56,7 +58,9 @@ const Banner = () => {
                     className="flex items-center gap-3"
                   >
                     <IoFastFood className="h-12 w-12 rounded-full bg-orange-100 p-3 text-2xl shadow-sm" />
-                    <span>Hot Coffee</span>
+                    <span className="text-xs md:text-sm lg:text-base">
+                      Hot Coffee
+                    </span>
                   </div>
                   <div
                     data-aos="fade-up"
@@ -65,7 +69,9 @@ const Banner = () => {
                     className="flex items-center gap-3"
                   >
                     <GiFoodTruck className="h-12 w-12 rounded-full bg-yellow-100 p-3 text-4xl shadow-sm" />
-                    <span>Cold Coffee</span>
+                    <span className="text-xs md:text-sm lg:text-base">
+                      Cold Coffee
+                    </span>
                   </div>
                 </div>
                 <div

@@ -35,9 +35,9 @@ const Services = () => {
         <div className="container">
           {/* header title */}
           <div data-aos="fade-up" className="mb-20 text-center">
-            <h1 className="font-cursive text-4xl font-bold text-gray-800">
+            <h2 className="font-cursive text-4xl font-bold text-gray-800">
               Best Coffee For You
-            </h1>
+            </h2>
           </div>
           {/* service card section */}
           <div className="grid grid-cols-1 place-items-center gap-14 sm:grid-cols-2 md:grid-cols-3 md:gap-5">
@@ -59,7 +59,7 @@ const Services = () => {
                   </div>
                   {/* text content */}
                   <div className="p-4 text-center">
-                    <h1 className="text-xl font-bold">{data.name}</h1>
+                    <h3 className="text-xl font-bold">{data.name}</h3>
                     <p className="line-clamp-2 text-sm text-gray-500 duration-300 group-hover:text-white">
                       {data.description}
                     </p>

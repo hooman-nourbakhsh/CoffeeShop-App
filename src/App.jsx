@@ -7,7 +7,7 @@ import Services from "./components/Services";
 import Banner from "./components/Banner";
 import AppStore from "./components/AppStore";
 import Testimonials from "./components/Testimonials";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {

@@ -43,14 +43,14 @@ const Home = () => {
               data-aos="fade-left"
               className="absolute left-10 top-10 rounded-xl bg-gradient-to-r from-primary to-secondary p-3 md:top-8 lg:top-5"
             >
-              <h1>Hey Coder</h1>
+              <h4>Hey Coder</h4>
             </div>
 
             <div
               data-aos="fade-right"
               className="absolute bottom-10 right-10 rounded-xl bg-gradient-to-r from-primary to-secondary p-3 md:bottom-8 lg:bottom-5"
             >
-              <h1>Best Coffee</h1>
+              <h4>Best Coffee</h4>
             </div>
           </div>
         </div>

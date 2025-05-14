@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <div style={bgImage} className="text-white">
       <div className="min-h-[400px] bg-black/40">
-        <div className="container grid pb-20 pt-5 md:grid-cols-3">
+        <div className="container grid pb-20 pt-5 text-center lg:grid-cols-3">
           {/* company details */}
           <div className="px-4 py-8">
             <a
@@ -47,19 +47,19 @@ const Footer = () => {
               Espresso Escape
             </p>
             <a
-              href="#"
-              className="mt-5 inline-block rounded-full bg-[#3d2517] px-4 py-2 text-sm"
+              href="https://github.com/hooman-nourbakhsh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block rounded-full bg-[#3d2517] px-4 py-2 duration-300 hover:scale-105"
             >
-              Visit out YouTube Channel
+              Visit my GitHub Profile
             </a>
           </div>
           {/* footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             {/* first col links */}
             <div className="px-4 py-8">
-              <h4 className="mb-3 text-xl font-semibold sm:text-left">
-                Footer Links
-              </h4>
+              <h4 className="mb-3 text-xl font-semibold">Footer Links</h4>
               <ul className="space-y-3">
                 {FooterLinks.map((data, index) => (
                   <li key={index}>
@@ -75,9 +75,7 @@ const Footer = () => {
             </div>
             {/* second col links */}
             <div className="px-4 py-8">
-              <h4 className="mb-3 text-xl font-semibold sm:text-left">
-                Quick Links
-              </h4>
+              <h4 className="mb-3 text-xl font-semibold">Quick Links</h4>
               <ul className="space-y-3">
                 {FooterLinks.map((data, index) => (
                   <li key={index}>
@@ -93,15 +91,13 @@ const Footer = () => {
             </div>
             {/* company details */}
             <div className="col-span-2 px-4 py-8 sm:col-auto">
-              <h4 className="mb-3 text-xl font-semibold sm:text-left">
-                Address
-              </h4>
+              <h4 className="mb-3 text-xl font-semibold">Address</h4>
               <div>
-                <address className="mb-3">Noida, India</address>
-                <p>+91 123456789</p>
+                <address className="mb-3">Tehran, Iran</address>
+                <p>+98 123456789</p>
 
                 {/* social links */}
-                <div className="mt-6 space-x-3">
+                <div className="mt-10 space-x-3">
                   <a href="#">
                     <FaFacebook className="inline-block text-3xl duration-200 hover:scale-105" />
                   </a>
