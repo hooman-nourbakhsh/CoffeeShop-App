@@ -5,21 +5,24 @@ const ServicesData = [
     id: 1,
     img: Img2,
     name: "Espresso",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consectetur.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consectetur.",
     aosDelay: "100",
   },
   {
     id: 2,
     img: Img2,
     name: "Americano",
-    description: "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
     aosDelay: "300",
   },
   {
     id: 3,
     img: Img2,
     name: "Cappuccino",
-    description: "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
+    description:
+      "Lorem ipsum dolor sit amet ipsum dolor sit ametipsum dolor sit amet ipsum dolor sit amet",
     aosDelay: "500",
   },
 ];
@@ -31,30 +34,35 @@ const Services = () => {
       <div className="py-10">
         <div className="container">
           {/* header title */}
-          <div className="text-center mb-20">
-            <h1 className="text-4xl font-bold font-cursive text-gray-800">Best Coffee For You</h1>
+          <div data-aos="fade-up" className="mb-20 text-center">
+            <h1 className="font-cursive text-4xl font-bold text-gray-800">
+              Best Coffee For You
+            </h1>
           </div>
           {/* service card section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
+          <div className="grid grid-cols-1 place-items-center gap-14 sm:grid-cols-2 md:grid-cols-3 md:gap-5">
             {ServicesData.map((data, index) => {
               return (
                 <div
                   data-aos="fade-up"
                   data-aos-delay={data.aosDelay}
                   key={index}
-                  className="rounded-2xl bg-white hover:bg-primary hover:text-white shadow-xl duration-200 max-w-[300px] group relative">
+                  className="group relative max-w-[300px] rounded-2xl bg-white shadow-xl duration-200 hover:bg-primary hover:text-white"
+                >
                   {/* image section */}
                   <div className="h-[122px]">
                     <img
                       src={data.img}
                       alt=""
-                      className="max-w-[200px] block mx-auto transform -translate-y-14 group-hover:scale-110 group-hover:rotate-6 duration-300"
+                      className="mx-auto block max-w-[200px] -translate-y-14 transform duration-300 group-hover:rotate-6 group-hover:scale-110"
                     />
                   </div>
                   {/* text content */}
                   <div className="p-4 text-center">
                     <h1 className="text-xl font-bold">{data.name}</h1>
-                    <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">{data.description}</p>
+                    <p className="line-clamp-2 text-sm text-gray-500 duration-300 group-hover:text-white">
+                      {data.description}
+                    </p>
                   </div>
                 </div>
               );

@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import Img101 from "../assets/101.jpeg";
 import Img102 from "../assets/102.jpeg";
@@ -72,31 +71,41 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="py14 mb-10">
+    <div className="mb-10 py-14">
       <div className="container">
         {/* header section */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold font-cursive text-gray-800">Testimonials</h2>
+        <div data-aos="fade-up" className="mb-10 text-center">
+          <h2 className="font-cursive text-4xl font-bold text-gray-800">
+            Testimonials
+          </h2>
         </div>
         {/* testimonal section */}
-        <div>
+        <div data-aos="zoom-in">
           <Slider {...settings}>
             {TestimonialsData.map((data) => {
               return (
                 <div className="my-6" key={data.id}>
-                  <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl bg-primary/10 relative">
+                  <div className="relative mx-4 flex flex-col gap-4 rounded-xl bg-primary/10 px-6 py-8 shadow-lg">
                     {/* Image section */}
                     <div className="mb-4">
-                      <img src={data.img} alt="" className="rounded-full w-20 h-20" />
+                      <img
+                        src={data.img}
+                        alt=""
+                        className="h-20 w-20 rounded-full"
+                      />
                     </div>
                     {/* content section */}
                     <div className="flex flex-col items-center gap-4">
                       <div className="space-y-3">
                         <p className="text-xs text-gray-500">{data.text}</p>
-                        <h1 className="text-xl font-bold text-black/60 font-cursive">{data.name}</h1>
+                        <h1 className="font-cursive text-xl font-bold text-black/60">
+                          {data.name}
+                        </h1>
                       </div>
                     </div>
-                    <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">,,</p>
+                    <p className="absolute right-0 top-0 font-serif text-9xl text-black/20">
+                      ,,
+                    </p>
                   </div>
                 </div>
               );

@@ -17,39 +17,68 @@ const bgImage = {
 const Banner = () => {
   return (
     <>
+      <span id="about"></span>
       <div style={bgImage}>
-        <div className="container min-h-[550px] flex justify-center items-center py-12 sm:py-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="container flex min-h-[550px] items-center justify-center py-12 sm:py-0">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {/* image section */}
-            <div>
-              <img src={BannerImage} alt="" className="max-w-[430px] w-full mx-auto spin drop-shadow-xl" />
+            <div data-aos="zoom-in">
+              <img
+                src={BannerImage}
+                alt=""
+                className="spin mx-auto w-full max-w-[430px] drop-shadow-xl"
+              />
             </div>
             {/* text section */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0">
-              <h1 className="text-3xl sm:text-4xl font-bold font-cursive">Premium Blen Coffee</h1>
-              <p className="text-sm text-gray-500 tracking-wider leading-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio
+              <h1
+                data-aos="fade-up"
+                className="font-cursive text-3xl font-bold sm:text-4xl"
+              >
+                Premium Blen Coffee
+              </h1>
+              <p
+                data-aos="fade-up"
+                className="text-sm leading-5 tracking-wider text-gray-500"
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+                reiciendis inventore iste ratione ex alias quis magni at optio
               </p>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-2">
                 <div className="space-y-5">
-                  <div className="flex items-center gap-3">
-                    <GrSecure className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-100" />
+                  <div data-aos="fade-up" className="flex items-center gap-3">
+                    <GrSecure className="h-12 w-12 rounded-full bg-red-100 p-3 text-2xl shadow-sm" />
                     <span>Premium Coffee</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-100" />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    className="flex items-center gap-3"
+                  >
+                    <IoFastFood className="h-12 w-12 rounded-full bg-orange-100 p-3 text-2xl shadow-sm" />
                     <span>Hot Coffee</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-100" />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-offset="0"
+                    className="flex items-center gap-3"
+                  >
+                    <GiFoodTruck className="h-12 w-12 rounded-full bg-yellow-100 p-3 text-4xl shadow-sm" />
                     <span>Cold Coffee</span>
                   </div>
                 </div>
-                <div className="border-l-4 border-primary/50 pl-6 space-y-3">
-                  <h4 className="text-2xl font-semibold font-cursive">Tea Lover</h4>
-                  <p className="text-gray-500 text-sm">
-                    Much like writing code, brewing the perfect cup of tea requires patience, precision, and a dash of passion to create a comforting
-                    blend of flavors.
+                <div
+                  data-aos="slide-left"
+                  className="space-y-3 border-l-4 border-primary/50 pl-6"
+                >
+                  <h4 className="font-cursive text-2xl font-semibold">
+                    Tea Lover
+                  </h4>
+                  <p className="text-sm text-gray-500">
+                    Much like writing code, brewing the perfect cup of tea
+                    requires patience, precision, and a dash of passion to
+                    create a comforting blend of flavors.
                   </p>
                 </div>
               </div>

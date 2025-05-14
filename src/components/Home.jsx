@@ -2,28 +2,54 @@ import HeroImage from "../assets/coffee2.png";
 
 const Home = () => {
   return (
-    <div className="min-h-[550px] sm:min-h-[600px] bg-brandDark flex justify-center items-center text-white">
+    <div className="flex min-h-[550px] items-center justify-center bg-brandDark text-white sm:min-h-[600px]">
       <div className="container pb-8 sm:pb-0">
         <div className="grid grid-cols-1 sm:grid-cols-2">
           {/* text content section */}
-          <div className="order-2 sm:order-1 flex flex-col justify-center gap-6">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-              We serve the richest <span className="text-primary font-cursive">Coffee</span>in the city
+          <div className="order-2 flex flex-col justify-center gap-6 sm:order-1 md:gap-20">
+            <h1
+              data-aos="fade-up"
+              data-aos-once="true"
+              className="text-5xl font-bold sm:text-6xl lg:text-7xl"
+            >
+              We serve the richest
+              <span
+                data-aos="zoom-out"
+                data-aos-delay="300"
+                className="font-cursive text-primary"
+              >
+                {" "}
+                Coffee{" "}
+              </span>
+              in the city
             </h1>
-            <div>
-              <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary rounded-full px-4 py-2 text-white hover:scale-105 duration-200">
+            <div data-aos="fade-up" data-aos-delay="400">
+              <button className="rounded-full border-2 border-primary bg-gradient-to-r from-primary to-secondary px-4 py-2 text-white duration-200 hover:scale-105">
                 Coffee And Code
               </button>
             </div>
           </div>
           {/* image section */}
-          <div className="min-h-[450px] flex justify-center items-center order-1 sm:order-2 relative">
-            <img src={HeroImage} alt="" className="w-[300px] sm:w-[450px] sm:scale-110 mx-auto spin" />
-            <div className="bg-gradient-to-r from-primary to-secondary absolute top-10 left-10 p-3 rounded-xl">
+          <div
+            data-aos="zoom-in"
+            className="relative order-1 flex min-h-[450px] items-center justify-center sm:order-2"
+          >
+            <img
+              src={HeroImage}
+              alt=""
+              className="spin mx-auto w-[300px] sm:w-[450px] sm:scale-110"
+            />
+            <div
+              data-aos="fade-left"
+              className="absolute left-10 top-10 rounded-xl bg-gradient-to-r from-primary to-secondary p-3 md:top-8 lg:top-5"
+            >
               <h1>Hey Coder</h1>
             </div>
 
-            <div className="bg-gradient-to-r from-primary to-secondary absolute bottom-10 right-10 p-3 rounded-xl">
+            <div
+              data-aos="fade-right"
+              className="absolute bottom-10 right-10 rounded-xl bg-gradient-to-r from-primary to-secondary p-3 md:bottom-8 lg:bottom-5"
+            >
               <h1>Best Coffee</h1>
             </div>
           </div>
